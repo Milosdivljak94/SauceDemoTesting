@@ -43,7 +43,7 @@ public class CommonMethods {
             element.sendKeys(text);
         } catch (StaleElementReferenceException e) {
             Thread.sleep(1000);
-            element.click();
+            element.sendKeys(text);
         }
     }
 
